@@ -1,0 +1,15 @@
+﻿@model Category
+
+<form method="post">
+    <h2>Create Category</h2>
+    <hr/>
+
+    <label>Category Name</label>
+    <input asp-for="Name"/>
+
+    <label>Display Order</label>
+    <input asp-for="Displayorder"/>
+
+    <button type="submit">Create</button>
+    <a asp-controller="Category" asp-action="Index">Back To List</a>
+</form>
