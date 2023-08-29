@@ -16,6 +16,7 @@
             <tr>
                 <td>@element.Name</td>
                 <td>@element.Displayorder</td>
+                <td><a asp-controller="Category" asp-action="Edit" asp-route-id="@element.Id">Edit</a></td>
             </tr>
         }
 
