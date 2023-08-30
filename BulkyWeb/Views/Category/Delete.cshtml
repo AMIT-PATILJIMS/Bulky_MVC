@@ -1,0 +1,14 @@
+﻿@model Category
+
+<form method="post">
+    <h2>Delete category</h2>
+
+    <label asp-for="Name"></label>
+    <input asp-for="Name" disabled class="form-control" />
+
+    <label asp-for="Displayorder"></label>
+    <input asp-for="Displayorder" disabled class="form-control" />
+
+    <button type="submit">Delete Details</button>
+    <a asp-controller="Category" asp-action="Index">Back To List</a>
+</form>

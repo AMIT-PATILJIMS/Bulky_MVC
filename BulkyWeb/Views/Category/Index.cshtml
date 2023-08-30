@@ -1,5 +1,8 @@
 ﻿@model List<Category>
 
+
+<partial name="_Notification" />
+
 <h1>Categories Details</h1>
 <a asp-controller="Category" asp-action="Create">Create</a>
 
@@ -17,6 +20,7 @@
                 <td>@element.Name</td>
                 <td>@element.Displayorder</td>
                 <td><a asp-controller="Category" asp-action="Edit" asp-route-id="@element.Id">Edit</a></td>
+                <td><a asp-controller="Category" asp-action="Delete" asp-route-id="@element.Id">Delete</a></td>
             </tr>
         }
 
